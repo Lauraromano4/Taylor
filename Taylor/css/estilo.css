@@ -1,0 +1,121 @@
+body{
+    
+    background-image: url('../img/back.jpg'); /* Imagem de fundo */
+    background-color: lightblue; /* Cor de fundo */
+    background-position: center; /* Centraliza a imagem horizontal e verticalmente */
+    background-size: cover; /* Faz a imagem cobrir todo o espaço disponível */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    height: 100vh; /* Garante que o fundo ocupe 100% da altura da janela */
+    margin: 0; /* Remove margens padrão do corpo */
+
+    
+}
+
+
+
+@font-face {
+    font-family: 'MinhaFontePersonalizada';
+    src: url('../fontes/Kaoly\ Demo-Regular.ttf') format('truetype'),
+  }
+
+ 
+
+  /* Aplicar a fonte no site */
+  body {
+    font-family: 'MinhaFontePersonalizada', sans-serif; /* Se a fonte falhar, usará uma alternativa sans-serif */
+  }
+
+  h1 {
+    font-family: 'MinhaFontePersonalizada';
+    position: absolute;
+    top: 50px; /* Distância de 50px do topo */
+    left: 100px; /* Distância de 100px da esquerda */
+    font-size: 70px;
+    
+  }
+
+  p{
+    position: relative;
+    top: 140px;   /* Move o texto 20px para baixo de sua posição original */
+    left: 70px;  /* Move o texto 50px para a direita de sua posição original */
+    font-size: 15px;
+    
+    padding: 10px;
+
+    width: 600px; /* Define uma largura fixa */
+    word-wrap: break-word; /* Força a quebra da palavra se ela ultrapassar a largura */
+
+    
+
+   
+    
+
+   
+  }
+
+
+
+
+   /* Estilos para a barra de navegação */
+   nav {
+    font-family: 'MinhaFontePersonalizada';
+    background-color: #04053a; /* Cor de fundo da navbar */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Distribui espaço entre os itens */
+    align-items: center;
+  }
+
+  /* Logo da navbar */
+  nav .logo {
+    color: white;
+    font-size: 24px;
+    
+    text-decoration: none;
+  }
+
+  /* Estilos para os links */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-left: 20px; /* Espaço entre os links */
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: #9b9adf; /* Cor de fundo ao passar o mouse */
+    border-radius: 4px; /* Bordas arredondadas ao passar o mouse */
+  }
+
+  /* Responsivo para telas menores */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column; /* Links em coluna no mobile */
+      display: none; /* Esconde o menu inicialmente no mobile */
+    }
+
+    nav .menu-toggle {
+      display: block; /* Exibe o botão de menu (hamburguer) no mobile */
+      cursor: pointer;
+    }
+  }
+
+  /* Mostra o menu quando clicar no botão */
+  .menu-open nav ul {
+    display: flex;
+  }
+
+
+
+
